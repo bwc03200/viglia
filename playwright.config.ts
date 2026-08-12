@@ -10,7 +10,7 @@ export default defineConfig({
     ["json", { outputFile: "test-results/results.json" }],
   ],
   use: {
-    baseURL: "https://viglia-road-sense.lovable.app",
+    baseURL: "https://vigla-road-sense.lovable.app",
     trace: "on-first-retry",
     screenshot: "only-on-failure",
   },
@@ -28,9 +28,4 @@ export default defineConfig({
       use: { ...devices["Desktop Safari"] },
     },
   ],
-  webServer: {
-    command: "npm run dev",
-    url: "http://localhost:3000",
-    reuseExistingServer: !process.env.CI,
-  },
 });

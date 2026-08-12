@@ -10,7 +10,7 @@ export default defineConfig({
     ["json", { outputFile: "test-results/results.json" }],
   ],
   use: {
-    baseURL: process.env.VIGLA_URL || "http://localhost:3000",
+    baseURL: "https://viglia-road-sense.lovable.app",
     trace: "on-first-retry",
     screenshot: "only-on-failure",
   },
